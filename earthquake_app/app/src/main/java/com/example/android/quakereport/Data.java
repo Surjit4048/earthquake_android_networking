@@ -3,17 +3,19 @@ package com.example.android.quakereport;
 
 public class Data {
 
-    String mag;
+    Double mag;
     String location;
-    String date;
+    Long date;
+    String url;
 
-    public Data(String mag, String location, String date) {
+    public Data(Double mag, String location, Long date, String url) {
         this.mag = mag;
         this.location = location;
         this.date = date;
+        this.url = url;
     }
 
-    public String getMag() {
+    public Double getMag() {
         return mag;
     }
 
@@ -21,7 +23,11 @@ public class Data {
         return location;
     }
 
-    public String getDate() {
+    public Long getTimeInMilliseconds() {
         return date;
+    }
+
+    public String getUrl() {
+        return url;
     }
 }
