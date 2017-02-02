@@ -13,14 +13,14 @@ import android.widget.TextView;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class CustomDataAdapter extends ArrayAdapter<Data> {
 
     public static final String LOCATION_OFFSET = " of ";
 
-    public CustomDataAdapter(Context context, ArrayList<Data> data) {
+    public CustomDataAdapter(Context context, List<Data> data) {
         super(context, 0, data);
     }
 
